@@ -3244,7 +3244,7 @@ h4 {
 p {
     padding: 0;
     margin: 0 0 50px 0;
-    color: rgba(255, 255, 255, 0.60);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .info-text {
@@ -3286,12 +3286,12 @@ h1 span {
 
 .infrastructure .question,
 .infrastructure .safety-sys {
-    background: #795548;
+    background: #009688;
 }
 
 .infrastructure .safety-info,
 .infrastructure p {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .intro {
@@ -3349,7 +3349,7 @@ header.sticky {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(102, 102, 102, 0.95);
+    background: rgba(33, 150, 243, 0.95);
     top: 0;
 }
 
@@ -3392,10 +3392,12 @@ header.sticky {
 .section-features h4 {
     text-transform: capitalize;
     margin-bottom: 10px;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 700;
 }
-
+.section-features p{
+    font-size: 14px;
+}
 .benefit {
     font-size: 36px;
     font-weight: 700;
@@ -3405,15 +3407,16 @@ header.sticky {
 }
 .section-features img{
     width: 100%;
-    margin: 10px 0 15px;
+    margin: 5px 0 15px;
 }
 
 footer{
     position: relative;
     padding: 15px;
     text-align: center;
-    background: #515151;
+    background: #1d7cc8;
     color: rgba(255, 255, 255, 0.5);
     width: 100%;
     float: left;
+    font-size: 11px;
 }
