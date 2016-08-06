@@ -146,67 +146,105 @@
 
 
     <section class="section-features">
-        <div class="container">
+        <div class="container" id="tabs">
            <div class="col-sm-12">
             <h2 class="benefit">Features</h2>
-<!--            <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum augue.</p>-->
             </div>
+            <div class="col-sm-12">
+                 <ul class="tabview">
+                    <li><a href="#tabs-1">India</a></li>
+                    <li><a href="#tabs-2">Florida</a></li>
+                    
+                  </ul>   
+            </div>
+            <div class="row" id="tabs-1">
+               <div class="col-sm-4">
+                    <h4>Crime Statistics</h4>
 
-            <div class="col-sm-4 wow fadeInDown" data-wow-duration="2s">
-                <h4>Create Incident Maps</h4>
+                        <a href="http://police.rajasthan.gov.in/PoliceContacts.aspx" target="_blank"> <img src="images/rj-p.png" alt=""></a>
+
+                   
+                </div>
                 
-                    <img src="images/PublicSafetyIncidentMaps.png" alt="">
                
-                <p>
-                    The Public Safety Incident Maps can be used by law enforcement agencies to create a series of incident layers from computer aided dispatch or records management data.
-                </p>
-            </div>
-            <div class="col-sm-4 wow fadeInDown" data-wow-duration="2s">
-                <h4>Visualize Crime Patterns</h4>
-                <div class="feature-img">
-                    <img src="images/RepeatandNearRepeatAnalysis.png" alt="">
-                </div>
-                <p>
-                    Repeat and Near Repeat Analysis can be used by law enforcement agencies to identify repeat and near repeat victimization patterns of a particular crime type within a specified time frame and geographic area.
-                </p>
-            </div>
+                
+                <div class="col-sm-4">
+                    <h4>Crime against woman in 2010-2014</h4>
 
-            <div class="col-sm-4 wow fadeInDown" data-wow-duration="2s">
-                <h4>Manage Community Events</h4>
-                <div class="feature-img">
-                    <img src="images/EventSiteMap.png" alt="">
-                </div>
-                <p>
-                    A collection of maps and apps used by government agencies and other stakeholders to permit, coordinate, plan, and promote community or special events.
-                </p>
-            </div>
-            
-            <div class="col-sm-4 wow fadeInDown" data-wow-duration="2s">
-                <h4>Develop Pre-Incident Plans</h4>
-                <div class="feature-img">
-                    <img src="images/PreIncidentPlanning.png" alt="">
-                </div>
-                <p>The Pre-Incident Planning map can be used by fire and law enforcement incident operations personnel to streamline the collection of hazards, equipment, supplies, and procedures needed to deal with a potential incident.
-                </p>
-            </div>
+                        <a href="http://jaipurpolice.rajasthan.gov.in/CIR2014.pdf" target="_blank">
+                            <img src="images/rj.png" alt="">
+                        </a>
 
-            <div class="col-sm-4 wow fadeInDown" data-wow-duration="2s">
-                <h4>Analyze Cell Phone Data</h4>
-                <div class="feature-img">
-                    <img src="images/CellPhoneAnalysis.png" alt="">
+                   
                 </div>
-                <p>The Cell Phone Analysis Map can be used by law enforcement agencies to analyze cell tower information and call detail records acquired from wireless service providers.
-                </p>
+                <div class="col-sm-4">
+                    <h4>Crime against woman in 2014</h4>
+
+                        <a href="http://jaipurpolice.rajasthan.gov.in/CIR2014.pdf" target="_blank">
+                            <img src="images/rj1.png" alt="">
+                        </a>
+
+                   
+                </div>
+                
+            </div>
+            <div class="row" id="tabs-2">
+                <div class="col-sm-4">
+                    <h4>Create Incident Maps</h4>
+
+                        <img src="images/PublicSafetyIncidentMaps.png" alt="">
+
+                    <p>
+                        The Public Safety Incident Maps can be used by law enforcement agencies to create a series of incident layers from computer aided dispatch or records management data.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Visualize Crime Patterns</h4>
+                    <div class="feature-img">
+                        <img src="images/RepeatandNearRepeatAnalysis.png" alt="">
+                    </div>
+                    <p>
+                        Repeat and Near Repeat Analysis can be used by law enforcement agencies to identify repeat and near repeat victimization patterns of a particular crime type within a specified time frame and geographic area.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Manage Community Events</h4>
+                    <div class="feature-img">
+                        <img src="images/EventSiteMap.png" alt="">
+                    </div>
+                    <p>
+                        A collection of maps and apps used by government agencies and other stakeholders to permit, coordinate, plan, and promote community or special events.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Develop Pre-Incident Plans</h4>
+                    <div class="feature-img">
+                        <img src="images/PreIncidentPlanning.png" alt="">
+                    </div>
+                    <p>The Pre-Incident Planning map can be used by fire and law enforcement incident operations personnel to streamline the collection of hazards, equipment, supplies, and procedures needed to deal with a potential incident.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Analyze Cell Phone Data</h4>
+                    <div class="feature-img">
+                        <img src="images/CellPhoneAnalysis.png" alt="">
+                    </div>
+                    <p>The Cell Phone Analysis Map can be used by law enforcement agencies to analyze cell tower information and call detail records acquired from wireless service providers.
+                    </p>
+                </div>
             </div>
         </div>
+        
 
     </section>
     
     <footer>
         Powered by <br><img src="images/exzeo.png" alt=""  >
     </footer>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    
     <script src="js/wow.js"></script>
     <script>
         $(window).scroll(function () {
@@ -216,6 +254,9 @@
                 $('header').removeClass("sticky");
             }
         });
+        $( function() {
+            $( "#tabs" ).tabs();
+          } );
     </script>
 
 
