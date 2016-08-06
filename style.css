@@ -894,10 +894,6 @@ body {
     padding: 0
 }
 
-header {
-    position: static!important
-}
-
 .theory-test-wrapper {
     overflow: hidden
 }
@@ -3314,7 +3310,7 @@ h1 span {
     z-index: 9;
 }
 
-nav {
+header {
     background: #666;
     color: #fff;
     font-size: 30px;
@@ -3328,11 +3324,11 @@ nav {
     width: 100%;
 }
 
-nav span {
+header span {
     font-weight: 700;
     color: rgb(173, 227, 248)
 }
-nav.sticky {
+header.sticky {
   font-size: 18px;
   padding: 7px 10px;
   height: 36px;

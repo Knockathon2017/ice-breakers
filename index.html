@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <nav>
+    <header>
         Ice <span>Breakers</span>
-    </nav>
+    </header>
     <section class="intro">
         <div class="info-text">
             <h1>Public <span>Safety</span></h1>
@@ -206,9 +206,9 @@
     <script>
         $(window).scroll(function () {
             if ($(this).scrollTop() > 1) {
-                $('nav').addClass("sticky");
+                $('header').addClass("sticky");
             } else {
-                $('nav').removeClass("sticky");
+                $('header').removeClass("sticky");
             }
         });
     </script>
