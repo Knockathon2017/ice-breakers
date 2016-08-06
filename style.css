@@ -3262,7 +3262,7 @@ p {
 h1 {
     color: #365993;
     font-size: 4em;
-    text-shadow: 0 0 white, 0 1px white, 1px 0 white, 0 1px white;*/
+/*    text-shadow: 0 0 white, 0 1px white, 1px 0 white, 0 1px white;*/
     padding: 0;
     margin: 0;
 }
@@ -3409,7 +3409,16 @@ header.sticky {
     width: 100%;
     margin: 5px 0 15px;
 }
-
+.admin{
+    float: right;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 36px;
+    text-decoration: none;
+}
+.sticky .admin{
+    line-height: 24px;
+}
 footer{
     position: relative;
     padding: 15px;
